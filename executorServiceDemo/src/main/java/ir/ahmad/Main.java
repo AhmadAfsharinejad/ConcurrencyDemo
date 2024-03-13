@@ -11,7 +11,7 @@ public class Main {
 
     public void run() throws InterruptedException, ExecutionException {
 
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        ExecutorService executorService = Executors.newCachedThreadPool();
         //Note: check other ExecutorService like newSingleThreadExecutor(), newFixedThreadPool()
 
         var futures = new ArrayList<Future<Integer>>();
